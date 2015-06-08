@@ -12,16 +12,12 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
 <head>
-  <title>PHProxy</title>
+  <title><?php echo $GLOBALS['_title']; ?></title>
   <link rel="stylesheet" type="text/css" href="style.css" title="Default Theme" media="all" />
 </head>
 <body onload="document.getElementById('address_box').focus()">
 <div id="container">
-  <h1 id="title">PHProxy</h1>
-  <ul id="navigation">
-    <li><a href="<?php echo $GLOBALS['_script_base'] ?>">URL Form</a></li>
-    <li><a href="javascript:alert('cookie managment has not been implemented yet')">Manage Cookies</a></li>
-  </ul>
+  <h1 id="title"><?php echo $GLOBALS['_branding']; ?></h1>
 <?php
 
 switch ($data['category'])
@@ -99,8 +95,6 @@ switch ($data['category'])
       ?>
     </ul>
   </form>
-  <!-- The least you could do is leave this link back as it is. This software is provided for free and I ask nothing in return except that you leave this link intact
-       You're more likely to recieve support should you require some if I see a link back in your installation than if not -->
   <div id="footer"><a href="http://whitefyre.com/poxy/">PHProxy</a> <?php echo $GLOBALS['_version'] ?></div>
 </div>
 </body>
