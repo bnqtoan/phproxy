@@ -138,3 +138,9 @@ form
 {
     margin: 5px;
 }
+.warning{
+    background: #ff8a00;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+}
