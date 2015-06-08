@@ -9,11 +9,19 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
 
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
 <head>
   <title><?php echo $GLOBALS['_title']; ?></title>
   <link rel="stylesheet" type="text/css" href="style.css" title="Default Theme" media="all" />
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-62782179-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </head>
 <body onload="document.getElementById('address_box').focus()">
 <div id="container">
